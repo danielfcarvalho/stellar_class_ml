@@ -17,7 +17,7 @@
 - Hyperparameter tuning com K-cross validation na classe GridSearchCV
 - Para cada modelo, fazer novamente K-cross validation, com parâmetros ótimos
 - Analisar matriz de confusão, F1 score e a curva ROC
-	- Ver se melhoraram em relação ao apsso anterior ao hyperparameter tuning
+	- Ver se melhoraram em relação ao passo anterior ao hyperparameter tuning
 - Escolher melhores modelos e fazer a curva de validação
 
 
