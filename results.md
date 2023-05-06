@@ -240,6 +240,20 @@ weighted avg       0.97      0.97      0.97     53313
 
 #### Neural Network
 
+Best hyperparameters:  {'activation': 'tanh', 'alpha': 0.0001, 'hidden_layer_sizes': (8, 6), 'learning_rate': 'adaptive', 'solver': 'adam'}
+Best score:  0.9570159572330077
+Classification Report: 
+
+              precision    recall  f1-score   support
+
+      GALAXY       0.92      0.95      0.94     17707
+        STAR       0.99      1.00      0.99     17742
+      QUASAR       0.96      0.92      0.94     17864
+
+    accuracy                           0.96     53313
+   macro avg       0.96      0.96      0.96     53313
+weighted avg       0.96      0.96      0.96     53313
+
 ### Optimal Model Training
 
 #### Logistic Regression without Regularization
@@ -385,3 +399,25 @@ Balanced accuracy score:
 ![Class Prediction Error](images/optimal_models/forest_cpe.png)
 
 #### Neural Network
+
+Balanced accuracy of each fold - [0.95828943 0.95591305 0.95655424 0.95788064 0.95800464]
+Avg balanced accuracy : 0.9573284011887866
+Classification Report: 
+
+              precision    recall  f1-score   support
+
+      GALAXY       0.93      0.95      0.94     17707
+        STAR       0.99      1.00      0.99     17742
+      QUASAR       0.96      0.93      0.94     17864
+
+    accuracy                           0.96     53313
+   macro avg       0.96      0.96      0.96     53313
+weighted avg       0.96      0.96      0.96     53313
+
+Balanced accuracy score: 
+0.9574281256912615
+
+![Confusion Matrix](images/optimal_models/nn_matrix.png)
+![ROC Curve](images/optimal_models/nn_roc.png)
+![Precision Recall](images/optimal_models//nn_pr.png)
+![Class Prediction Error](images/optimal_models/nn_cpe.png)
