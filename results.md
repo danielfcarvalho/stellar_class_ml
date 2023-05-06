@@ -296,6 +296,27 @@ Balanced accuracy score:
 
 ### SVM
 
+Balanced accuracy of each fold - [0.96198152 0.96101946 0.96053243 0.9615009  0.96266686]
+Avg balanced accuracy : 0.9615402352994942
+Classification Report: 
+
+              precision    recall  f1-score   support
+
+      GALAXY       0.93      0.96      0.94     17707
+        STAR       0.99      1.00      0.99     17742
+      QUASAR       0.96      0.93      0.95     17864
+
+    accuracy                           0.96     53313
+   macro avg       0.96      0.96      0.96     53313
+weighted avg       0.96      0.96      0.96     53313
+
+Balanced accuracy score: 
+0.9607973893448075
+
+![Confusion Matrix](images/optimal_models/svm_matrix.png)
+![ROC Curve](images/optimal_models/svm_roc.png)
+![Precision Recall](images/optimal_models/svm_pr.png)
+![Class Prediction Error](images/optimal_models/svm_cpe.png)
 
 #### XG Boost
 
