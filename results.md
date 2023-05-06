@@ -141,9 +141,9 @@ Balanced accuracy score:
 ![Confusion Matrix](images/nn_init.png)
 
 
-## Hyper parameter tunning
+### Hyper parameter tunning
 
-### Logistic Regression
+#### Logistic Regression without Regularization
 
 Best hyperparameters:  {'C': 10000, 'max_iter': 200, 'solver': 'lbfgs'}
 Best score:  0.9363318461352949
@@ -159,11 +159,41 @@ Classification Report:
    macro avg       0.94      0.94      0.94     53313
 weighted avg       0.94      0.94      0.94     53313
 
+#### Logistic Regression with L1 Regularization
+
+Best hyperparameters:  {'C': 100, 'max_iter': 5000, 'penalty': 'l1', 'solver': 'saga'}
+Best score:  0.9360424454359098
+Classification Report: 
+
+      GALAXY       0.89      0.92      0.90     17707
+        STAR       0.99      1.00      0.99     17742
+      QUASAR       0.93      0.88      0.91     17864
+
+    accuracy                           0.93     53313
+   macro avg       0.94      0.93      0.93     53313
+weighted avg       0.94      0.93      0.93     53313
+
+#### Logistic Regression with L2 Regularization
+
+Best hyperparameters:  {'C': 5000, 'max_iter': 500, 'penalty': 'l2', 'solver': 'lbfgs'}
+Best score:  0.936307729410346
+Classification Report: 
+
+              precision    recall  f1-score   support
+
+      GALAXY       0.89      0.92      0.90     17707
+        STAR       0.99      1.00      1.00     17742
+      QUASAR       0.93      0.88      0.91     17864
+
+    accuracy                           0.94     53313
+   macro avg       0.94      0.94      0.94     53313
+weighted avg       0.94      0.94      0.94     53313
 
 ### SVM
 
 Best hyperparameters:  {'C': 1000, 'gamma': 1, 'kernel': 'rbf'}
 Best score:  0.9615740182483219
+
 Classification Report: 
 
               precision    recall  f1-score   support
@@ -175,3 +205,37 @@ Classification Report:
     accuracy                           0.96     53313
    macro avg       0.96      0.96      0.96     53313
 weighted avg       0.96      0.96      0.96     53313
+
+#### XG Boost
+
+Best hyperparameters:  {'gamma': 0, 'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 1000}
+Best score:  0.9684553237670324
+Classification Report: 
+
+              precision    recall  f1-score   support
+
+      GALAXY       0.95      0.96      0.95     17707
+        STAR       1.00      1.00      1.00     17742
+      QUASAR       0.96      0.95      0.95     17864
+
+    accuracy                           0.97     53313
+   macro avg       0.97      0.97      0.97     53313
+weighted avg       0.97      0.97      0.97     53313
+
+#### Random Forest
+
+Best hyperparameters:  {'max_depth': 15, 'max_features': 'log2', 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 1000}
+Best score:  0.96991840508059
+Classification Report: 
+
+              precision    recall  f1-score   support
+
+      GALAXY       0.94      0.97      0.96     17707
+        STAR       1.00      1.00      1.00     17742
+      QUASAR       0.97      0.94      0.96     17864
+
+    accuracy                           0.97     53313
+   macro avg       0.97      0.97      0.97     53313
+weighted avg       0.97      0.97      0.97     53313
+
+#### Neural Network
