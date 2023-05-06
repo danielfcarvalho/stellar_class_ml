@@ -18,7 +18,7 @@ Balanced accuracy score:
 
 0.9466822187647795
 
-![Confusion Matrix](images/log_noreg_init.png)
+![Confusion Matrix](images/model_training/log_noreg_init.png)
 
 #### Logistic Regression - L1 Regularization
 
@@ -38,7 +38,7 @@ Balanced accuracy score:
 
 0.9531565888100934
 
-![Confusion Matrix](images/log_l1reg_init.png)
+![Confusion Matrix](images/model_training/log_l1reg_init.png)
 
 #### Logistic Regression - L2 Regularization
 
@@ -58,7 +58,7 @@ Balanced accuracy score:
 
 0.9466822187647795
 
-![Confusion Matrix](images/log_l2reg_init.png)
+![Confusion Matrix](images/model_training/log_l2reg_init.png)
 
 #### SVM
 
@@ -78,7 +78,7 @@ Balanced accuracy score:
 
 0.9182803710154867
 
-![Confusion Matrix](images/svm_init.png)
+![Confusion Matrix](images/model_training/svm_init.png)
 
 #### XG Boost
 
@@ -98,7 +98,7 @@ Balanced accuracy score:
 
 0.9757190225521732
 
-![Confusion Matrix](images/xgb_init.png)
+![Confusion Matrix](images/model_training/xgb_init.png)
 
 #### Random Forest
 
@@ -118,7 +118,7 @@ Balanced accuracy score:
 
 0.9785542496094847
 
-![Confusion Matrix](images/forest_init.png)
+![Confusion Matrix](images/model_training/forest_init.png)
 
 #### Neural Network
 
@@ -138,7 +138,7 @@ Balanced accuracy score:
 
 0.9542573102085742
 
-![Confusion Matrix](images/nn_init.png)
+![Confusion Matrix](images/model_training/nn_init.png)
 
 
 ### Hyper parameter tunning
@@ -237,5 +237,72 @@ Classification Report:
     accuracy                           0.97     53313
    macro avg       0.97      0.97      0.97     53313
 weighted avg       0.97      0.97      0.97     53313
+
+#### Neural Network
+
+### Optimal Model Training
+
+#### Logistic Regression without Regularization
+
+Balanced accuracy of each fold - [0.93745457 0.93540592 0.93535757 0.93636719 0.93684746]
+Avg balanced accuracy : 0.936286541888198
+Classification Report: 
+
+              precision    recall  f1-score   support
+
+      GALAXY       0.89      0.92      0.90     17707
+        STAR       0.99      1.00      1.00     17742
+      QUASAR       0.93      0.88      0.91     17864
+
+    accuracy                           0.94     53313
+   macro avg       0.94      0.94      0.94     53313
+weighted avg       0.94      0.94      0.94     53313
+
+Balanced accuracy score: 
+0.9355288249628871
+
+![Confusion Matrix](images/optimal_models/log_noreg_matrix.png)
+![ROC Curve](images/optimal_models/log_noreg_roc.png)
+![Precision Recall](images/optimal_models/log_noreg_pr.png)
+![Class Prediction Error](images/optimal_models/log_noreg_cpe.png)
+
+#### Logistic Regression with L1 Regularization
+
+Balanced accuracy of each fold - [0.93709331 0.93508487 0.93507665 0.9361665  0.93656654]
+Avg balanced accuracy : 0.9359975728680089
+Classification Report: 
+
+              precision    recall  f1-score   support
+
+      GALAXY       0.89      0.92      0.90     17707
+        STAR       0.99      1.00      0.99     17742
+      QUASAR       0.93      0.88      0.91     17864
+
+    accuracy                           0.93     53313
+   macro avg       0.94      0.94      0.93     53313
+weighted avg       0.94      0.93      0.93     53313
+
+Balanced accuracy score: 
+0.9350207168441612
+
+![Confusion Matrix](images/optimal_models/log_reg_l1_matrix.png)
+![ROC Curve](images/optimal_models/log_reg_l1_roc.png)
+![Precision Recall](images/optimal_models/log_reg_l1_pr.png)
+![Class Prediction Error](images/optimal_models/log_reg_l1_cpe.png)
+
+#### Logistic Regression with L2 Regularization
+
+
+
+### SVM
+
+
+#### XG Boost
+
+
+
+#### Random Forest
+
+
 
 #### Neural Network
