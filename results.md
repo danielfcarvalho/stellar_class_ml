@@ -158,3 +158,20 @@ Classification Report:
     accuracy                           0.94     53313
    macro avg       0.94      0.94      0.94     53313
 weighted avg       0.94      0.94      0.94     53313
+
+
+### SVM
+
+Best hyperparameters:  {'C': 1000, 'gamma': 1, 'kernel': 'rbf'}
+Best score:  0.9615740182483219
+Classification Report: 
+
+              precision    recall  f1-score   support
+
+      GALAXY       0.93      0.96      0.94     17707
+        STAR       0.99      1.00      0.99     17742
+      QUASAR       0.97      0.93      0.95     17864
+
+    accuracy                           0.96     53313
+   macro avg       0.96      0.96      0.96     53313
+weighted avg       0.96      0.96      0.96     53313
