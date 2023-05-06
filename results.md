@@ -292,7 +292,27 @@ Balanced accuracy score:
 
 #### Logistic Regression with L2 Regularization
 
+Balanced accuracy of each fold - [0.93741443 0.93540592 0.93535757 0.93632702 0.93680733]
+Avg balanced accuracy : 0.9362624551726952
+Classification Report: 
 
+              precision    recall  f1-score   support
+
+      GALAXY       0.89      0.92      0.90     17707
+        STAR       0.99      1.00      1.00     17742
+      QUASAR       0.93      0.88      0.91     17864
+
+    accuracy                           0.94     53313
+   macro avg       0.94      0.94      0.94     53313
+weighted avg       0.94      0.94      0.94     53313
+
+Balanced accuracy score: 
+0.9355100000160675
+
+![Confusion Matrix](images/optimal_models/log_reg_l2_matrix.png)
+![ROC Curve](images/optimal_models/log_reg_l2_roc.png)
+![Precision Recall](images/optimal_models/log_reg_l2_pr.png)
+![Class Prediction Error](images/optimal_models/log_reg_l2_cpe.png)
 
 ### SVM
 
@@ -320,10 +340,48 @@ Balanced accuracy score:
 
 #### XG Boost
 
+Balanced accuracy of each fold - [0.96931022 0.96629786 0.96830791 0.96871163 0.96955467]
+Avg balanced accuracy : 0.9684364588134546
+Classification Report: 
 
+              precision    recall  f1-score   support
+
+      GALAXY       0.95      0.96      0.95     17707
+        STAR       1.00      1.00      1.00     17742
+      QUASAR       0.96      0.95      0.95     17864
+
+    accuracy                           0.97     53313
+   macro avg       0.97      0.97      0.97     53313
+weighted avg       0.97      0.97      0.97     53313
+
+Balanced accuracy score: 
+0.9674990709984344
+
+![Confusion Matrix](images/optimal_models/xgb_matrix.png)
+![ROC Curve](images/optimal_models/xgb_roc.png)
 
 #### Random Forest
 
+Balanced accuracy of each fold - [0.97039091 0.96902568 0.96999105 0.97039383 0.96982981]
+Avg balanced accuracy : 0.9699262562792704
+Classification Report: 
 
+              precision    recall  f1-score   support
+
+      GALAXY       0.94      0.96      0.95     17707
+        STAR       1.00      1.00      1.00     17742
+      QUASAR       0.97      0.94      0.95     17864
+
+    accuracy                           0.97     53313
+   macro avg       0.97      0.97      0.97     53313
+weighted avg       0.97      0.97      0.97     53313
+
+Balanced accuracy score: 
+0.9686970492260206
+
+![Confusion Matrix](images/optimal_models/forest_matrix.png)
+![ROC Curve](images/optimal_models/forest_roc.png)
+![Precision Recall](images/optimal_models/forest_pr.png)
+![Class Prediction Error](images/optimal_models/forest_cpe.png)
 
 #### Neural Network
