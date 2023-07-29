@@ -1,6 +1,6 @@
 ## Context
 
-The goal of this project, done for the subject Tópicos de Aprendizagem Automática at Universidade de Aveiro, was to train various supervised machine learning (ML) models to classify instances from the Sloan Digital Sky Survey Data Release 17 (SDSS DR17) as either Galaxies, Stars or Quasars. The goal was to select models already testes in related work, as well as to train new models not used before on this problem, and then compare their results in terms of efficiency and accuracy, based on various performance metrics. Hyper-parameter tuning was also applied, to check whether this had any effect in improving the efficiency of the tested models.
+The goal of this project, done for the subject Tópicos de Aprendizagem Automática at Universidade de Aveiro, was to train various supervised machine learning (ML) models to classify instances from the Sloan Digital Sky Survey Data Release 17 (SDSS DR17) [Kaggle](https://www.kaggle.com/datasets/fedesoriano/stellar-classification-dataset-sdss17) as either Galaxies, Stars or Quasars. The goal was to select models already testes in related work, as well as to train new models not used before on this problem, and then compare their results in terms of efficiency and accuracy, based on various performance metrics. Hyper-parameter tuning was also applied, to check whether this had any effect in improving the efficiency of the tested models.
 
 ## Trained Models
 
